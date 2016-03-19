@@ -28,6 +28,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 		<dependency>
@@ -69,6 +73,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                    <agent>${settings.localRepository}/org/aspectj/aspectjweaver/1.8.8/aspectjweaver-1.8.8.jar</agent>
+				</configuration>
 			</plugin>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
