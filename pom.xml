@@ -70,13 +70,6 @@
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
         <plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-                    <agent>${settings.localRepository}/org/aspectj/aspectjweaver/1.8.8/aspectjweaver-1.8.8.jar</agent>
-				</configuration>
-			</plugin>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>
